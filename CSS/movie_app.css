@@ -1,3 +1,18 @@
 body{
-	background-color: yellow;
+	background-color: #740c16;
 }
+img{
+	width: 100%;
+	margin: 5px;
+	border: solid 5px #740c16 ;
+	border-radius: 10%;
+}
+div.col-sm-3{
+	padding-left: 5px;
+	padding-right: 5px;
+} 
+#now-playing{
+	font-size: 50px;
+	color: white;
+}
+.bg-primary{}
