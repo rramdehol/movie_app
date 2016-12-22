@@ -15,4 +15,7 @@ div.col-sm-3{
 	font-size: 50px;
 	color: white;
 }
-.bg-primary{}
+.movie-tile{
+	height: 450px;
+	width: 300px;
+}

@@ -13,7 +13,7 @@ $(document).ready(function(){
 		for(let i=0;i<nowPlayingData.results.length;i++){
 			var poster = imageBaseUrl+"w300"+nowPlayingData.results[i].poster_path;
 			nowPlayingHTML += '<button type="button" class="btn btn-primary" movieID='+nowPlayingData.results[i].id+' data-toggle="modal" data-target="#myModal">';
-				nowPlayingHTML += "<div class='col-sm-12'>";
+				nowPlayingHTML += "<div class='col-sm-12 movie-tile'>";
 					nowPlayingHTML+= '<img src= "'+poster+'">';
 					nowPlayingHTML += "<div></div>";
 				nowPlayingHTML += '</div>';
@@ -25,7 +25,8 @@ $(document).ready(function(){
 
 		$('button').click(function(){
 			console.log(this);
-			this.getAttribute("movie-id");
+			var movieId = $(this).attr("movieid");
+			console.log(movieId);
 			// filtered JSON request
 
 		});
